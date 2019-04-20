@@ -24,7 +24,7 @@ use Cake\TestSuite\TestCase;
 class CurlTest extends TestCase
 {
 
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
         $this->skipIf(!function_exists('curl_init'), 'Skipping as ext/curl is not installed.');

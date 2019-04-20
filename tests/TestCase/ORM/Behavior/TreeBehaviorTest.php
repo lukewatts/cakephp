@@ -33,7 +33,7 @@ class TreeBehaviorTest extends TestCase
         'core.NumberTrees'
     ];
 
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
         $this->table = $this->getTableLocator()->get('NumberTrees');
@@ -41,7 +41,7 @@ class TreeBehaviorTest extends TestCase
         $this->table->addBehavior('Tree');
     }
 
-    public function tearDown()
+    public function tearDown(): void
     {
         parent::tearDown();
         $this->getTableLocator()->clear();

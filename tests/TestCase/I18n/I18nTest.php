@@ -39,7 +39,7 @@ class I18nTest extends TestCase
      *
      * @return void
      */
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
         $this->locale = Locale::getDefault() ?: I18n::DEFAULT_LOCALE;
@@ -50,7 +50,7 @@ class I18nTest extends TestCase
      *
      * @return void
      */
-    public function tearDown()
+    public function tearDown(): void
     {
         parent::tearDown();
         I18n::clear();

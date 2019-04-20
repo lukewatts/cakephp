@@ -60,7 +60,7 @@ class TextHelperTest extends TestCase
      *
      * @return void
      */
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
         $this->View = new View();
@@ -75,7 +75,7 @@ class TextHelperTest extends TestCase
      *
      * @return void
      */
-    public function tearDown()
+    public function tearDown(): void
     {
         unset($this->Text, $this->View);
         static::setAppNamespace($this->_appNamespace);

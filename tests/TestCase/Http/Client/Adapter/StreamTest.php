@@ -102,7 +102,7 @@ class CakeStreamWrapper implements \ArrayAccess
 class StreamTest extends TestCase
 {
 
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
         $this->stream = $this->getMockBuilder('Cake\Http\Client\Adapter\Stream')
@@ -112,7 +112,7 @@ class StreamTest extends TestCase
         stream_wrapper_register('http', __NAMESPACE__ . '\CakeStreamWrapper');
     }
 
-    public function tearDown()
+    public function tearDown(): void
     {
         parent::tearDown();
         stream_wrapper_restore('http');

@@ -92,7 +92,7 @@ class StaticConfigTraitTest extends TestCase
      *
      * @return void
      */
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
         $this->subject = $this->getObjectForTrait('Cake\Core\StaticConfigTrait');
@@ -103,7 +103,7 @@ class StaticConfigTraitTest extends TestCase
      *
      * @return void
      */
-    public function tearDown()
+    public function tearDown(): void
     {
         unset($this->subject);
         parent::tearDown();

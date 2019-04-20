@@ -30,7 +30,7 @@ class BehaviorRegistryTest extends TestCase
      *
      * @return void
      */
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
         $this->Table = new Table(['table' => 'articles']);
@@ -44,7 +44,7 @@ class BehaviorRegistryTest extends TestCase
      *
      * @return void
      */
-    public function tearDown()
+    public function tearDown(): void
     {
         $this->clearPlugins();
         unset($this->Table, $this->EventManager, $this->Behaviors);

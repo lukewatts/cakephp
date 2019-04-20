@@ -47,7 +47,7 @@ class XmlTest extends TestCase
      *
      * @return void
      */
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
         $this->_appEncoding = Configure::read('App.encoding');
@@ -59,7 +59,7 @@ class XmlTest extends TestCase
      *
      * @return void
      */
-    public function tearDown()
+    public function tearDown(): void
     {
         parent::tearDown();
         Configure::write('App.encoding', $this->_appEncoding);

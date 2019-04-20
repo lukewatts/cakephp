@@ -33,7 +33,7 @@ class ActionDispatcherTest extends TestCase
      *
      * @return void
      */
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
         Router::reload();
@@ -46,7 +46,7 @@ class ActionDispatcherTest extends TestCase
      *
      * @return void
      */
-    public function tearDown()
+    public function tearDown(): void
     {
         parent::tearDown();
         DispatcherFactory::clear();

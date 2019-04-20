@@ -37,7 +37,7 @@ class ApcuEngineTest extends TestCase
      * timestamp and ttl comparisons within the same request are effectively
      * meaningless
      */
-    public static function setUpBeforeClass()
+    public static function setUpBeforeClass(): void
     {
         static::$useRequestTime = ini_get('apc.use_request_time');
         ini_set('apc.use_request_time', 0);
@@ -47,7 +47,7 @@ class ApcuEngineTest extends TestCase
      * Reset apc.user_request_time to original value
      *
      */
-    public static function teardownAfterClass()
+    public static function teardownAfterClass(): void
     {
         ini_set('apc.use_request_time', static::$useRequestTime);
     }
@@ -57,7 +57,7 @@ class ApcuEngineTest extends TestCase
      *
      * @return void
      */
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
         $this->skipIf(!function_exists('apcu_store'), 'APCu is not installed or configured properly.');
@@ -76,7 +76,7 @@ class ApcuEngineTest extends TestCase
      *
      * @return void
      */
-    public function tearDown()
+    public function tearDown(): void
     {
         parent::tearDown();
         Cache::drop('apcu');

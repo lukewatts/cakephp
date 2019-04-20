@@ -75,7 +75,7 @@ class ExpressionTypeCastingIntegrationTest extends TestCase
 
     public $fixtures = ['core.OrderedUuidItems'];
 
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
         $this->connection = ConnectionManager::get('test');

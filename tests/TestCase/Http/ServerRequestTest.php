@@ -42,7 +42,7 @@ class ServerRequestTest extends TestCase
      *
      * @return void
      */
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
         $this->server = $_SERVER;
@@ -50,7 +50,7 @@ class ServerRequestTest extends TestCase
         Configure::write('App.baseUrl', false);
     }
 
-    public function tearDown()
+    public function tearDown(): void
     {
         parent::tearDown();
 

@@ -39,7 +39,7 @@ class TypeTest extends TestCase
      *
      * @return void
      */
-    public function setUp()
+    public function setUp(): void
     {
         $this->_originalMap = Type::getMap();
         parent::setUp();
@@ -50,7 +50,7 @@ class TypeTest extends TestCase
      *
      * @return void
      */
-    public function tearDown()
+    public function tearDown(): void
     {
         parent::tearDown();
 

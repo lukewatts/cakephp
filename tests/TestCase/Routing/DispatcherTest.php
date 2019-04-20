@@ -36,7 +36,7 @@ class DispatcherTest extends TestCase
      *
      * @return void
      */
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
         $_GET = [];
@@ -57,7 +57,7 @@ class DispatcherTest extends TestCase
      *
      * @return void
      */
-    public function tearDown()
+    public function tearDown(): void
     {
         error_reporting($this->errorLevel);
         parent::tearDown();

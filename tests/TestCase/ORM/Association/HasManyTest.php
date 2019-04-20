@@ -46,7 +46,7 @@ class HasManyTest extends TestCase
      *
      * @return void
      */
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
         $this->author = $this->getTableLocator()->get('Authors', [
@@ -91,7 +91,7 @@ class HasManyTest extends TestCase
      *
      * @return void
      */
-    public function tearDown()
+    public function tearDown(): void
     {
         parent::tearDown();
         $this->getTableLocator()->clear();

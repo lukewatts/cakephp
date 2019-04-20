@@ -42,7 +42,7 @@ class FormAuthenticateTest extends TestCase
      *
      * @return void
      */
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
         $this->Collection = $this->getMockBuilder(ComponentRegistry::class)->getMock();

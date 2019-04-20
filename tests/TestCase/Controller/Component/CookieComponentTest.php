@@ -38,7 +38,7 @@ class CookieComponentTest extends TestCase
      *
      * @return void
      */
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
         $controller = $this->getMockBuilder('Cake\Controller\Controller')

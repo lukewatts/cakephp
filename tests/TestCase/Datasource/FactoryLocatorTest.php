@@ -162,7 +162,7 @@ class FactoryLocatorTest extends TestCase
         $stub->loadModel('Magic', 'Test');
     }
 
-    public function tearDown()
+    public function tearDown(): void
     {
         FactoryLocator::drop('Test');
 

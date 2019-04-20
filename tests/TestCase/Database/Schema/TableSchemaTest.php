@@ -47,13 +47,13 @@ class TableTest extends TestCase
 
     protected $_map;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->_map = Type::getMap();
         parent::setUp();
     }
 
-    public function tearDown()
+    public function tearDown(): void
     {
         $this->getTableLocator()->clear();
         Type::clear();

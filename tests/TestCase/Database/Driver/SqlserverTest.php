@@ -30,7 +30,7 @@ class SqlserverTest extends TestCase
      *
      * @return void
      */
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
         $this->missingExtension = !defined('PDO::SQLSRV_ENCODING_UTF8');

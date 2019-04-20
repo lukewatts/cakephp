@@ -30,7 +30,7 @@ class DispatcherFactoryTest extends TestCase
      *
      * @return void
      */
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
         static::setAppNamespace();
@@ -43,7 +43,7 @@ class DispatcherFactoryTest extends TestCase
      *
      * @return void
      */
-    public function tearDown()
+    public function tearDown(): void
     {
         parent::tearDown();
         error_reporting($this->errorLevel);

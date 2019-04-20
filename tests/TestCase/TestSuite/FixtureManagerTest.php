@@ -35,13 +35,13 @@ class FixtureManagerTest extends TestCase
      *
      * @return void
      */
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
         $this->manager = new FixtureManager();
     }
 
-    public function tearDown()
+    public function tearDown(): void
     {
         parent::tearDown();
         Log::reset();

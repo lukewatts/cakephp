@@ -28,7 +28,7 @@ class WincacheEngineTest extends TestCase
      *
      * @return void
      */
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
         $this->skipIf(!function_exists('wincache_ucache_set'), 'Wincache is not installed or configured properly.');
@@ -42,7 +42,7 @@ class WincacheEngineTest extends TestCase
      *
      * @return void
      */
-    public function tearDown()
+    public function tearDown(): void
     {
         parent::tearDown();
         Cache::drop('wincache');

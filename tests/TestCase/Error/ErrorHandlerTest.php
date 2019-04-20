@@ -81,7 +81,7 @@ class ErrorHandlerTest extends TestCase
      *
      * @return void
      */
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
         Router::reload();
@@ -109,7 +109,7 @@ class ErrorHandlerTest extends TestCase
      *
      * @return void
      */
-    public function tearDown()
+    public function tearDown(): void
     {
         parent::tearDown();
         Log::reset();
@@ -126,7 +126,7 @@ class ErrorHandlerTest extends TestCase
      *
      * @return void
      */
-    public static function setUpBeforeClass()
+    public static function setUpBeforeClass(): void
     {
         parent::setUpBeforeClass();
         self::$errorLevel = error_reporting();

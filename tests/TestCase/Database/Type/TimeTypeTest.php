@@ -44,7 +44,7 @@ class TimeTypeTest extends TestCase
      *
      * @return void
      */
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
         $this->type = new TimeType();
@@ -57,7 +57,7 @@ class TimeTypeTest extends TestCase
      *
      * @return void
      */
-    public function tearDown()
+    public function tearDown(): void
     {
         parent::tearDown();
         I18n::setLocale($this->locale);

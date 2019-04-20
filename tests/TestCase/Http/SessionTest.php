@@ -84,7 +84,7 @@ class SessionTest extends TestCase
      *
      * @return void
      */
-    public function tearDown()
+    public function tearDown(): void
     {
         unset($_SESSION);
         parent::tearDown();

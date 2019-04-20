@@ -34,7 +34,7 @@ class ResponseEmitterTest extends TestCase
      *
      * @return void
      */
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
         $GLOBALS['mockedHeadersSent'] = false;
@@ -47,7 +47,7 @@ class ResponseEmitterTest extends TestCase
      *
      * @return void
      */
-    public function tearDown()
+    public function tearDown(): void
     {
         parent::tearDown();
         unset($GLOBALS['mockedHeadersSent']);

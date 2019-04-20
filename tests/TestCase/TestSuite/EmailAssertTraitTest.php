@@ -26,13 +26,13 @@ class EmailAssertTraitTest extends TestCase
 
     use EmailAssertTrait;
 
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
         TransportFactory::setConfig('debug', ['className' => DebugTransport::class]);
     }
 
-    public function tearDown()
+    public function tearDown(): void
     {
         parent::tearDown();
         TransportFactory::drop('debug');
